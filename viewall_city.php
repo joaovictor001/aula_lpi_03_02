@@ -2,27 +2,34 @@
 include 'connect.php';
 include 'checklogin.php';
 ?>
+<button><a href="reg_city.php">adicionar cidade</button></a>
 <table border='1'>
     <tr>
         <th>
-            Name
+            ID
         </th>
         <th>
-            Username
+            Cidade
+        </th>
+        <th>
+            Excluir
         </th>
     </tr>
 
 <?php
-$sq="select * from reg";
+$sq="select * from city";
 $qu=mysqli_query($con,$sq);
 while($f=  mysqli_fetch_assoc($qu)){
     ?>
     <tr>
         <td>
-            <?php echo $f['name']?>
+            <?php echo $f['idCity']?>
         </td>
         <td>
-            <?php echo $f['username']?>
+            <?php echo $f['nameCity']?>
+        </td>
+        <td>
+            <a href="delete_city.php">Remover </a>
         </td>
     </tr>
     <?php
