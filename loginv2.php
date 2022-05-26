@@ -1,5 +1,9 @@
-<?php
 
+
+<!DOCTYPE html>
+
+<html lang="en">
+<?php
 include'connect.php';
 
 if(isset($_POST['sub'])){
@@ -18,9 +22,6 @@ if(isset($_POST['sub'])){
   
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,7 +46,7 @@ if(isset($_POST['sub'])){
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action="../../index3.html" method="post">
+      <form action="./AdminLTE-3.2.0/index3.html" method="post">
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
@@ -86,6 +87,7 @@ if(isset($_POST['sub'])){
         </a>
         <a href="#" class="btn btn-block btn-danger">
           <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
+          
         </a>
       </div>
       <!-- /.social-auth-links -->
@@ -103,10 +105,10 @@ if(isset($_POST['sub'])){
 <!-- /.login-box -->
 
 <!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
+<script src="AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
 </body>
 </html>
